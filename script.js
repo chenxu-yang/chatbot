@@ -23,7 +23,7 @@ $(window).load(function() {
   $messages.mCustomScrollbar();
   setTimeout(function() {
     sendMessage('Hi~what can I do for you?');
-  }, 100);
+  }, 10);
 });
 
 function updateScrollbar() {
@@ -72,7 +72,7 @@ function insertMessage() {
   updateScrollbar();
   setTimeout(function() {
     postMessage(msg);
-  }, 1000 + Math.random() * 20 * 100);
+  }, 10);
 }
 
 $('.message-submit').click(function() {
@@ -106,5 +106,5 @@ function sendMessage(msg) {
       .addClass('new');
     setDate();
     updateScrollbar();
-  }, 1000 + Math.random() * 20 * 100);
+  }, 10;
 }
